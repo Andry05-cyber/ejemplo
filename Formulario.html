@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Estudiantes</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <h1>Registro de Estudiantes</h1>
+        <nav>
+            <ul>
+                <li><a href="index1.html">Página principal</a></li>
+                <li><a href="Formulario.html">Formulario</a></li>
+                <li><a href="https://www.uce.edu.ec/web/fil">Visitanos en</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Ingresa tus Datos</h2>
+        <form id="formRegistro">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" required>
+
+            <label for="matricula">Matrícula:</label>
+            <input type="text" id="matricula" required>
+
+            <label for="correo">Correo Institucional:</label>
+            <input type="email" id="correo" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" required>
+
+            <label for="carrera">Carrera:</label>
+            <select id="carrera" required>
+                <option value="">Selecciona una carrera</option>
+                <option value="Ingeniería en Software">Ingeniería en Software</option>
+                <option value="Administración de Empresas">Administración de Empresas</option>
+                <option value="Contabilidad">Contabilidad</option>
+                <option value="Derecho">Derecho</option>
+                <option value="Medicina">Medicina</option>
+            </select>
+
+            <label for="semestre">Semestre:</label>
+            <input type="number" id="semestre" min="1" max="10" required>
+
+            <label>Sexo:</label>
+            <div class="opciones-fila">
+                <input type="radio" id="masculino" name="sexo" value="Masculino" required>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="femenino" name="sexo" value="Femenino" required>
+                <label for="femenino">Femenino</label>
+            </div>
+
+            <button type="submit">Registrar</button>
+        </form>
+    </section>
+
+    <script src="registro.js"></script>
+</body>
+</html>
